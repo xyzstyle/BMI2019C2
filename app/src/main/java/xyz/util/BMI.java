@@ -42,7 +42,7 @@ public class BMI {
     }
 
     private double bmiOfImperial() {
-        return 703 * bmiOfMetric();
+        return 703 * bmiOfMetric()/10000;
     }
 
     public double getBmi() {
