@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_linear_outer">10dp</dimen>
+    <dimen name="padding_linear_outer">8dp</dimen>
+    <dimen name="edt_bmi_width">100dp</dimen>
+    <dimen name="font_small_size">16sp</dimen>
+    <dimen name="font_medium_size">18sp</dimen>
+    <dimen name="font_big_size">20sp</dimen>
+
+</resources>

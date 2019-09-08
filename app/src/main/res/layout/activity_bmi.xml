@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="10dp"
-    android:layout_marginEnd="10dp"
-    android:layout_marginBottom="10dp"
-    android:background="#bbbbbb"
+    android:layout_marginStart="@dimen/margin_linear_outer"
+    android:layout_marginEnd="@dimen/margin_linear_outer"
+    android:layout_marginBottom="@dimen/margin_linear_outer"
+    android:background="@color/color_bmi_background"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="@dimen/padding_linear_outer">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
 
         <EditText
             android:id="@+id/et_height"
-            android:layout_width="100dp"
+            android:layout_width="@dimen/edt_bmi_width"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:inputType="numberDecimal" />
@@ -47,7 +47,7 @@
 
         <EditText
             android:id="@+id/et_weight"
-            android:layout_width="100dp"
+            android:layout_width="@dimen/edt_bmi_width"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:inputType="numberDecimal" />
@@ -141,13 +141,10 @@
         android:textSize="20sp" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
-        android:background="@color/color_table_back"
-        android:gravity="center"
+        style="@style/MyTable.Title"
         android:text="@string/bmi_table"
-        android:textSize="18sp" />
+         />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -155,23 +152,15 @@
 
         <TextView
 
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/white"
-            android:gravity="center"
+           style="@style/MyTable"
             android:text="@string/range"
-            android:textSize="16sp" />
+             />
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            style="@style/MyTable"
             android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:background="@android:color/white"
-            android:gravity="center"
             android:text="@string/bmi_category"
-            android:textSize="16sp" />
+             />
     </LinearLayout>
 
     <LinearLayout
@@ -180,23 +169,13 @@
         android:layout_marginTop="7dp">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/white"
-            android:gravity="center"
-            android:text="@string/less20"
-            android:textSize="16sp" />
+            style="@style/MyTable"
+            android:text="@string/less20" />
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            style="@style/MyTable"
             android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:background="@android:color/white"
-            android:gravity="center"
-            android:text="@string/category_less"
-            android:textSize="16sp" />
+            android:text="@string/category_less"/>
     </LinearLayout>
 
     <LinearLayout
@@ -205,23 +184,13 @@
         android:layout_marginTop="7dp">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/white"
-            android:gravity="center"
-            android:text="@string/normal"
-            android:textSize="16sp" />
+            style="@style/MyTable"
+            android:text="@string/normal"/>
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            style="@style/MyTable"
             android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:background="@android:color/white"
-            android:gravity="center"
-            android:text="@string/category_normal"
-            android:textSize="16sp" />
+            android:text="@string/category_normal"/>
     </LinearLayout>
 
     <LinearLayout
@@ -230,23 +199,15 @@
         android:layout_marginTop="6dp">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/white"
-            android:gravity="center"
+            style="@style/MyTable"
             android:text="@string/over25"
-            android:textSize="16sp" />
+           />
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            style="@style/MyTable"
             android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:background="@android:color/white"
-            android:gravity="center"
             android:text="@string/category_over"
-            android:textSize="16sp" />
+            />
     </LinearLayout>
 
 </LinearLayout>
