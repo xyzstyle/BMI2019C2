@@ -7,3 +7,4 @@
         android:id="@+id/menu_about"
         android:title="@string/about" />
 </menu>
+
